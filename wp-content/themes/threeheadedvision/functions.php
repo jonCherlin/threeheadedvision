@@ -23,3 +23,6 @@
  */
 
 require_once( dirname( __FILE__ ) . '/lib/init.php' );
+
+remove_action('genesis_entry_content', 'genesis_do_post_content');
+remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
